@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Abduallah Nazrul — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#071126;
+      --muted:#9fb6c3;
+      --accent1:#06b6d4;
+      --accent2:#10b981;
+      --card:#071722;
+      --radius:14px;
+      color-scheme: dark;
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:radial-gradient(900px 500px at 10% 10%, rgba(6,182,212,0.05), transparent), radial-gradient(700px 400px at 90% 90%, rgba(16,185,129,0.03), transparent), var(--bg); color:#e6f2f8;}
+    .wrap{max-width:900px;margin:36px auto;padding:28px;}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.03);padding:18px;border-radius:var(--radius);}
+    header{text-align:center;margin-bottom:20px}
+    h1{margin:6px 0 0;font-size:48px;font-weight:800}
+    .subtitle{color:var(--muted);font-size:18px;margin-top:6px}
+    .meta{color:var(--muted);font-size:14px;margin-top:6px}
+    .projects{margin-top:26px}
+    .projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:12px}
+    .project{padding:14px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.005));border:1px solid rgba(255,255,255,0.03);cursor:pointer;transition:transform .16s ease}
+    .project:hover{transform:translateY(-6px)}
+    .project .title{font-weight:700}
+    .project .sub{color:var(--muted);font-size:13px;margin-top:6px}
+    #contact{margin-top:28px}
+    .contact-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:12px}
+    .link{display:flex;align-items:center;gap:8px;padding:10px 14px;border-radius:12px;background:rgba(255,255,255,0.02);text-decoration:none;color:#ffffff;font-weight:700}
+    .link img{width:18px;height:18px;filter:invert(1)}
+    footer{margin-top:30px;text-align:center;color:var(--muted);font-size:13px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <!-- Header -->
+    <header class="card">
+      <h1>Abduallah Nazrul</h1>
+      <div class="subtitle">Aspiring innovator and student maker</div>
+      <div class="meta">Exploring robotics, electronics, and creative projects</div>
+    </header>
+
+    <!-- Projects -->
+    <section id="projects" class="projects">
+      <div style="display:flex;align-items:center;justify-content:space-between">
+        <h3 style="margin:0">Projects</h3>
+        <div class="meta">Some things I’ve worked on</div>
+      </div>
+
+      <div class="projects-grid">
+        <div class="project">
+          <div class="title">Sample Project One</div>
+          <div class="sub">Description of the project</div>
+        </div>
+        <div class="project">
+          <div class="title">Sample Project Two</div>
+          <div class="sub">Description of the project</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="card">
+      <h3>Contact</h3>
+      <p class="meta">Find me on Instagram</p>
+      <div class="contact-row">
+        <a class="link" href="https://instagram.com/your_instagram_here" target="_blank" rel="noopener">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram"> Instagram
+        </a>
+      </div>
+    </section>
+
+    <footer>
+      <div class="meta">Built by Abduallah Nazrul • Inspired by Showcasy style</div>
+    </footer>
+  </div>
+</body>
+</html>
